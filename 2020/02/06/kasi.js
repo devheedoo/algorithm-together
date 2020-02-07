@@ -10,9 +10,10 @@ var isValid = function(s) {
         }
     }
     
-    if(check.length==0){
+    /*if(check.length===0){
         return true
     }else{
         return false
-    }
+    }*/
+    return check.length === 0
 };
