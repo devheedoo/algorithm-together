@@ -1,7 +1,6 @@
 class Solution {
     public boolean isValid(String s) {
         boolean result = false;
-        int cnt = 0;
         String tempStr = s;
         String compareStr = "";
             
@@ -18,7 +17,6 @@ class Solution {
                 }
                 
                 compareStr = tempStr;
-                cnt++;
             }
             
             if("".equals(tempStr)){
