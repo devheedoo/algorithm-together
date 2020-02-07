@@ -5,7 +5,7 @@ class Solution {
         String compareStr = "";
             
         if(s.length()%2 == 1){
-            result = false;
+            return false;
         } else {
             while(true){
                 tempStr = tempStr.replaceAll("\\(\\)", "");
@@ -15,14 +15,11 @@ class Solution {
                 if(compareStr.equals(tempStr)){
                     break;
                 }
-                
                 compareStr = tempStr;
             }
             
             if("".equals(tempStr)){
-                result = true;
-            } else {
-                result = false;
+                return true;
             }
         }
         return result;
