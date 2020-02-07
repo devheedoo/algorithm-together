@@ -3,6 +3,7 @@ class Solution {
         boolean result = false;
         int cnt = 0;
         String tempStr = s;
+        String compareStr = "";
             
         if(s.length()%2 == 1){
             result = false;
@@ -12,11 +13,11 @@ class Solution {
                 tempStr = tempStr.replaceAll("\\{\\}", "");
                 tempStr = tempStr.replaceAll("\\[\\]", "");
                 
-                System.out.println(tempStr);
-                
-                if(cnt > s.length()){
+                if(compareStr.equals(tempStr)){
                     break;
                 }
+                
+                compareStr = tempStr;
                 cnt++;
             }
             
